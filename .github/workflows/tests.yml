@@ -1,10 +1,11 @@
 name: Tests
- on:  
+
+on:
   push:
-   jobs:   
-   test:    
-    runs-on: 
-    ubuntu-latest   
-      steps:     
-        - name: Dire bonjour      
-           run: echo "Bonjour, ici la CI de Task Manager" 
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Dire bonjour
+        run: echo "Bonjour, ici la CI de Task Manager"
